@@ -1,0 +1,3 @@
+{
+  plugins.bacon.enable = true;
+}
