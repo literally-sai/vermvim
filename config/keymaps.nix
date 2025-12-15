@@ -261,6 +261,19 @@
         silent = true;
       };
     }
+    {
+      mode = [
+        "n"
+        "i"
+      ];
+      key = "<leader>md";
+      action = "<cmd>Markview splitToggle<CR>";
+      options = {
+        desc = "View markdown in split view";
+        silent = true;
+      };
+    }
+
   ];
   extraConfigLua = ''
     vim.cmd([[cabbrev .. cd ..]])
