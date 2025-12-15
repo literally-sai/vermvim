@@ -34,7 +34,6 @@
           checks = {
             default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
           };
-
           packages = {
             default = nvim;
           };
