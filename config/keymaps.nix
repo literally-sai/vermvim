@@ -16,12 +16,12 @@
     {
       mode = "n";
       key = "<Tab>";
-      action = "<cmd>bnext<cr>";
+      action = "<cmd>bnext<CR>";
     }
     {
       mode = "n";
       key = "<S-Tab>";
-      action = "<cmd>bprev<cr>";
+      action = "<cmd>bprev<CR>";
     }
     {
       mode = [
@@ -50,17 +50,17 @@
     {
       mode = "n";
       key = "<leader>ff";
-      action = ''<cmd>Telescope find_files<cr>'';
+      action = ''<cmd>Telescope find_files<CR>'';
     }
     {
       mode = "n";
       key = "<leader>fg";
-      action = ''<cmd>Telescope live_grep<cr>'';
+      action = ''<cmd>Telescope live_grep<CR>'';
     }
     {
       mode = "n";
       key = "<C-n>";
-      action = "<cmd>NvimTreeToggle<cr>";
+      action = "<cmd>NvimTreeToggle<CR>";
       options = {
         silent = true;
       };
@@ -68,7 +68,7 @@
     {
       mode = "n";
       key = "<C-h>";
-      action = ''<cmd>lua if require("nvim-tree.view").is_visible() then require("nvim-tree.api").tree.focus() end<cr>'';
+      action = ''<cmd>lua if require("nvim-tree.view").is_visible() then require("nvim-tree.api").tree.focus() end<CR>'';
       options = {
         silent = true;
       };
@@ -76,7 +76,7 @@
     {
       mode = "n";
       key = "<leader>th";
-      action = ''<cmd>lua require("telescope.builtin").colorscheme({ enable_preview = true })<cr>'';
+      action = ''<cmd>lua require("telescope.builtin").colorscheme({ enable_preview = true })<CR>'';
       options = {
         silent = true;
       };
@@ -90,7 +90,7 @@
         "t"
       ];
       key = "<M-i>";
-      action = "<cmd>ToggleTerm direction=float<cr>";
+      action = "<cmd>ToggleTerm direction=float<CR>";
       options = {
         desc = "Floating ToggleTerm";
         silent = true;
@@ -105,7 +105,7 @@
         "t"
       ];
       key = "<M-h>";
-      action = "<cmd>ToggleTerm direction=horizontal<cr>";
+      action = "<cmd>ToggleTerm direction=horizontal<CR>";
       options = {
         desc = "Horizontal ToggleTerm";
         silent = true;
@@ -120,7 +120,7 @@
         "t"
       ];
       key = "<M-v>";
-      action = "<cmd>ToggleTerm direction=vertical<cr>";
+      action = "<cmd>ToggleTerm direction=vertical<CR>";
       options = {
         desc = "Vertical ToggleTerm";
         silent = true;
@@ -135,7 +135,7 @@
         "t"
       ];
       key = "<M-t>";
-      action = "<cmd>ToggleTerm direction=tab<cr>";
+      action = "<cmd>ToggleTerm direction=tab<CR>";
       options = {
         desc = "Tab ToggleTerm";
         silent = true;
@@ -144,7 +144,7 @@
     {
       mode = "n";
       key = "<leader>bd";
-      action = "<cmd>bd<cr>";
+      action = "<cmd>bd<CR>";
       options = {
         desc = "Delete current buffer";
         silent = true;
@@ -153,7 +153,7 @@
     {
       mode = "n";
       key = "<leader>bb";
-      action = "<cmd>Telescope buffers<cr>";
+      action = "<cmd>Telescope buffers<CR>";
       options = {
         desc = "List buffers";
         silent = true;
@@ -162,7 +162,7 @@
     {
       mode = "n";
       key = "<leader>xx";
-      action = "<cmd>TroubleToggle<cr>";
+      action = "<cmd>TroubleToggle<CR>";
       options = {
         desc = "Toggle Trouble";
         silent = true;
@@ -171,7 +171,7 @@
     {
       mode = "n";
       key = "<leader>xw";
-      action = "<cmd>Trouble workspace_diagnostics<cr>";
+      action = "<cmd>Trouble workspace_diagnostics<CR>";
       options = {
         desc = "Workspace diagnostics";
         silent = true;
@@ -180,7 +180,7 @@
     {
       mode = "n";
       key = "<leader>xd";
-      action = "<cmd>Trouble document_diagnostics<cr>";
+      action = "<cmd>Trouble document_diagnostics<CR>";
       options = {
         desc = "Document diagnostics";
         silent = true;
@@ -189,7 +189,7 @@
     {
       mode = "n";
       key = "<leader>gg";
-      action = "<cmd>LazyGit<cr>";
+      action = "<cmd>LazyGit<CR>";
       options = {
         desc = "Open LazyGit";
         silent = true;
@@ -198,7 +198,7 @@
     {
       mode = "n";
       key = "<leader>fh";
-      action = "<cmd>Telescope help_tags<cr>";
+      action = "<cmd>Telescope help_tags<CR>";
       options = {
         desc = "Help tags";
         silent = true;
@@ -207,7 +207,7 @@
     {
       mode = "n";
       key = "<leader>fk";
-      action = "<cmd>Telescope keymaps<cr>";
+      action = "<cmd>Telescope keymaps<CR>";
       options = {
         desc = "Keymaps";
         silent = true;
@@ -219,7 +219,7 @@
         "i"
       ];
       key = "<C-k>";
-      action = "<cmd>lua vim.lsp.buf.hover()<cr>";
+      action = "<cmd>lua vim.lsp.buf.hover()<CR>";
       options = {
         desc = "LSP: Show hover documentation / signature help";
         silent = true;
@@ -228,7 +228,7 @@
     {
       mode = "n";
       key = "<C-h>";
-      action = "<cmd>wincmd h<cr>";
+      action = "<cmd>wincmd h<CR>";
       options = {
         desc = "Move focus to the left window";
         silent = true;
@@ -237,7 +237,7 @@
     {
       mode = "n";
       key = "<C-l>";
-      action = "<cmd>wincmd l<cr>";
+      action = "<cmd>wincmd l<CR>";
       options = {
         desc = "Move focus to the right window";
         silent = true;
@@ -246,7 +246,7 @@
     {
       mode = "n";
       key = "<C-j>";
-      action = "<cmd>wincmd j<cr>";
+      action = "<cmd>wincmd j<CR>";
       options = {
         desc = "Move focus to the lower window";
         silent = true;
@@ -255,7 +255,7 @@
     {
       mode = "n";
       key = "<C-k>";
-      action = "<cmd>wincmd k<cr>";
+      action = "<cmd>wincmd k<CR>";
       options = {
         desc = "Move focus to the upper window";
         silent = true;
