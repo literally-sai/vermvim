@@ -24,9 +24,7 @@
       action = "<cmd>bprev<CR>";
     }
     {
-      mode = [
-        "n"
-      ];
+      mode = "n";
       key = "<C-c>";
       action = "<cmd>%y+<CR>";
       options = {
@@ -237,7 +235,6 @@
     {
       mode = [
         "n"
-        "i"
       ];
       key = "<leader>md";
       action = "<cmd>Markview splitToggle<CR>";
