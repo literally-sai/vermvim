@@ -161,33 +161,6 @@
     }
     {
       mode = "n";
-      key = "<leader>xx";
-      action = "<cmd>TroubleToggle<CR>";
-      options = {
-        desc = "Toggle Trouble";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>xw";
-      action = "<cmd>Trouble workspace_diagnostics<CR>";
-      options = {
-        desc = "Workspace diagnostics";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>xd";
-      action = "<cmd>Trouble document_diagnostics<CR>";
-      options = {
-        desc = "Document diagnostics";
-        silent = true;
-      };
-    }
-    {
-      mode = "n";
       key = "<leader>gg";
       action = "<cmd>LazyGit<CR>";
       options = {
@@ -273,7 +246,87 @@
         silent = true;
       };
     }
-
+    {
+      mode = "n";
+      key = "gd";
+      action.__raw = "vim.lsp.buf.definition";
+      options = {
+        desc = "LSP: Go to definition";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "gD";
+      action.__raw = "vim.lsp.buf.declaration";
+      options = {
+        desc = "LSP: Go to declaration";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "gi";
+      action.__raw = "vim.lsp.buf.implementation";
+      options = {
+        desc = "LSP: Go to implementation";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "gr";
+      action = "<cmd>Telescope lsp_references<CR>";
+      options = {
+        desc = "LSP: Show references (with Telescope)";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>rn";
+      action.__raw = "vim.lsp.buf.rename";
+      options = {
+        desc = "LSP: Rename symbol";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ca";
+      action.__raw = "vim.lsp.buf.code_action";
+      options = {
+        desc = "LSP: Code actions";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ws";
+      action = "<cmd>Telescope lsp_workspace_symbols<CR>";
+      options = {
+        desc = "LSP: Workspace symbols (with Telescope)";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ds";
+      action = "<cmd>Telescope lsp_document_symbols<CR>";
+      options = {
+        desc = "LSP: Document symbols (with Telescope)";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ao";
+      action = "<cmd>AerialToggle<CR>";
+      options = {
+        desc = "Toggle Aerial outline sidebar";
+        silent = true;
+      };
+    }
   ];
   extraConfigLua = ''
     vim.cmd([[cabbrev .. cd ..]])
