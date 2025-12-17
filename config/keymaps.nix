@@ -324,6 +324,15 @@
         silent = true;
       };
     }
+    {
+      mode = "n";
+      key = "<leader>ns";
+      action = "<cmd>nohlsearch<CR>";
+      options = {
+        desc = "Stop highlight searched";
+        silent = true;
+      };
+    }
   ];
   extraConfigLua = ''
     vim.cmd([[cabbrev .. cd ..]])
