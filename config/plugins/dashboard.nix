@@ -31,7 +31,7 @@
         ];
         opts = {
           position = "center";
-          hl = "Type";
+          hl = "Title";
         };
       }
       {
@@ -54,7 +54,7 @@
               ];
               position = "center";
               shortcut = "n";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
@@ -73,7 +73,7 @@
               ];
               position = "center";
               shortcut = "f";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
@@ -92,7 +92,7 @@
               ];
               position = "center";
               shortcut = "r";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
@@ -111,7 +111,7 @@
               ];
               position = "center";
               shortcut = "w";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
@@ -130,7 +130,7 @@
               ];
               position = "center";
               shortcut = "c";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
@@ -149,7 +149,7 @@
               ];
               position = "center";
               shortcut = "q";
-              cursor = 3;
+              cursor = 0;
               width = 50;
               align_shortcut = "right";
               hl_shortcut = "Keyword";
