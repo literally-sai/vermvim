@@ -65,7 +65,7 @@
     }
     {
       mode = "n";
-      key = "<C-h>";
+      key = "<C-a>";
       action = ''<cmd>lua if require("nvim-tree.view").is_visible() then require("nvim-tree.api").tree.focus() end<CR>'';
       options = {
         silent = true;
@@ -189,7 +189,7 @@
         "n"
         "i"
       ];
-      key = "<C-k>";
+      key = "<C-d>";
       action = "<cmd>lua vim.lsp.buf.hover()<CR>";
       options = {
         desc = "LSP: Show hover documentation / signature help";
