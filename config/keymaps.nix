@@ -141,7 +141,7 @@
     }
     {
       mode = "n";
-      key = "<leader>bd";
+      key = "<leader>x";
       action = "<cmd>bd<CR>";
       options = {
         desc = "Delete current buffer";
@@ -335,7 +335,6 @@
     }
   ];
   extraConfigLua = ''
-    vim.cmd([[cabbrev .. cd ..]])
     vim.cmd([[cabbrev W w !sudo tee % > /dev/null]])
     vim.cmd([[cabbrev Q q!]])
   '';
