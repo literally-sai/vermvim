@@ -26,5 +26,8 @@
     };
   };
 
-  extraPackages = [ pkgs.imagemagick ];
+  extraPackages = [
+    pkgs.imagemagick
+    pkgs.catimg
+  ];
 }
