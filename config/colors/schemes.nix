@@ -59,6 +59,6 @@
     in
     [ customThemesPlugin ];
   extraConfigLua = ''
-    vim.cmd.colorscheme "night"
+    vim.cmd.colorscheme "marathon"
   '';
 }
