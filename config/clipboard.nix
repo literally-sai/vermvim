@@ -1,5 +1,4 @@
 { pkgs, ... }:
-
 {
   clipboard = {
     register = "unnamedplus";
