@@ -14,6 +14,7 @@
       nil_ls.settings.nix.flake.autoArchive = true;
       cssls.enable = true;
       jsonls.enable = true;
+      sqls.enable = true;
       dockerls.enable = true;
       docker_compose_language_service.enable = true;
       tailwindcss.enable = true;
