@@ -1,6 +1,7 @@
 {
   plugins.lsp = {
     enable = true;
+    inlayHints = true;
     servers = {
       rust_analyzer = {
         enable = true;
