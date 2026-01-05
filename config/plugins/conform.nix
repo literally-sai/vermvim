@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   plugins.conform-nvim = {
     enable = true;
@@ -36,6 +38,10 @@
           "prettierd"
           "prettier"
         ];
+        xml = [
+          "xmlformat"
+          "xmllint"
+        ];
         rust = [ "rustfmt" ];
         nix = [ "alejandra" ];
         c = [ "clang_format" ];
@@ -45,4 +51,8 @@
       };
     };
   };
+
+  extraPackages = [
+    pkgs.xmlformat
+  ];
 }
