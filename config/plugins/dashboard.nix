@@ -31,7 +31,7 @@
         ];
         opts = {
           position = "center";
-          hl = "Title";
+          hl = "Type";
         };
       }
       {
