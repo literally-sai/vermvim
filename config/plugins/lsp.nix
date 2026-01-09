@@ -21,6 +21,12 @@
       html.enable = true;
       emmet_ls.enable = true;
       terraformls.enable = true;
+      lua_ls.enable = true;
     };
+  };
+
+  plugins = {
+    lsp-format.enable = true;
+    lspsaga.enable = true;
   };
 }
