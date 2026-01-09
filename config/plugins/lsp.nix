@@ -27,6 +27,9 @@
 
   plugins = {
     lsp-format.enable = true;
-    lspsaga.enable = true;
+    lspsaga = {
+      enable = true;
+      settings.lightbulb.enable = false;
+    };
   };
 }
