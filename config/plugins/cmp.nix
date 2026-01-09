@@ -14,10 +14,9 @@
     };
     lspkind = {
       enable = true;
-      mode = "symbol_text";
+      settings.mode = "symbol_text";
       cmp = {
         enable = true;
-        # Custom Theme
         after = ''
           function(entry, vim_item, kind)
               local strings = vim.split(kind.kind, "%s", { trimempty = true })
@@ -72,30 +71,6 @@
         };
         mapping = {
           "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Tab>" = ''
-            cmp.mapping(function(fallback)
-              if cmp.visible() then
-                cmp.select_next_item()
-              elseif require("luasnip").expand_or_locally_jumpable() then
-                require("luasnip").expand_or_jump()
-              elseif has_words_before() then
-                cmp.complete()
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
-          "<S-Tab>" = ''
-            cmp.mapping(function(fallback)
-              if cmp.visible() then
-                cmp.select_prev_item()
-              elseif require("luasnip").jumpable(-1) then
-                require("luasnip").jump(-1)
-              else
-                fallback()
-              end
-            end, { "i", "s" })
-          '';
           "<C-Space>" = "cmp.mapping.complete()";
           "<C-e>" = "cmp.mapping.abort()";
           "<Up>" = "cmp.mapping.select_prev_item()";
@@ -108,7 +83,7 @@
       };
     };
   };
-  # Snippets
+
   plugins.friendly-snippets.enable = true;
   extraPlugins = with pkgs.vimPlugins; [
     vim-snippets
