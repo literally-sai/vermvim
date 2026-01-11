@@ -197,6 +197,18 @@
       };
     }
     {
+      mode = [
+        "n"
+        "i"
+      ];
+      key = "<C-S-d>";
+      action = "<cmd>lua vim.diagnostic.open_float({ scope = \"line\", border = \"rounded\", source = \"always\" })<CR>";
+      options = {
+        desc = "LSP: Show line diagnostics only";
+        silent = true;
+      };
+    }
+    {
       mode = "n";
       key = "<C-h>";
       action = "<cmd>wincmd h<CR>";
