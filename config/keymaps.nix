@@ -345,6 +345,69 @@
         silent = true;
       };
     }
+
+    {
+      mode = [
+        "n"
+        "i"
+        "v"
+      ];
+      key = "<A-Up>";
+      action = "<Esc>:m .-2<CR>==gi";
+      options = {
+        desc = "Move line up";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<A-Up>";
+      action = ":m .-2<CR>==";
+      options = {
+        desc = "Move line up";
+        silent = true;
+      };
+    }
+    {
+      mode = "v";
+      key = "<A-Up>";
+      action = ":m '<-2<CR>gv=gv";
+      options = {
+        desc = "Move selection up";
+        silent = true;
+      };
+    }
+    {
+      mode = [
+        "n"
+        "i"
+        "v"
+      ];
+      key = "<A-Down>";
+      action = "<Esc>:m .+1<CR>==gi";
+      options = {
+        desc = "Move line down";
+        silent = true;
+      };
+    }
+    {
+      mode = "n";
+      key = "<A-Down>";
+      action = ":m .+1<CR>==";
+      options = {
+        desc = "Move line down";
+        silent = true;
+      };
+    }
+    {
+      mode = "v";
+      key = "<A-Down>";
+      action = ":m '>+1<CR>gv=gv";
+      options = {
+        desc = "Move selection down";
+        silent = true;
+      };
+    }
   ];
   extraConfigLua = ''
     vim.cmd([[cabbrev W w !sudo tee % > /dev/null]])
