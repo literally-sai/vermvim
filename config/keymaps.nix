@@ -88,7 +88,7 @@
         "t"
       ];
       key = "<M-i>";
-      action = "<cmd>ToggleTerm direction=float<CR>";
+      action = "<Cmd>exe v:count1 . \"ToggleTerm direction=float\"<CR>";
       options = {
         desc = "Floating ToggleTerm";
         silent = true;
@@ -103,7 +103,7 @@
         "t"
       ];
       key = "<M-h>";
-      action = "<cmd>ToggleTerm direction=horizontal<CR>";
+      action = "<Cmd>exe v:count1 . \"ToggleTerm direction=horizontal\"<CR>";
       options = {
         desc = "Horizontal ToggleTerm";
         silent = true;
@@ -118,7 +118,7 @@
         "t"
       ];
       key = "<M-v>";
-      action = "<cmd>ToggleTerm direction=vertical<CR>";
+      action = "<Cmd>exe v:count1 . \"ToggleTerm direction=vertical\"<CR>";
       options = {
         desc = "Vertical ToggleTerm";
         silent = true;
@@ -133,7 +133,7 @@
         "t"
       ];
       key = "<M-t>";
-      action = "<cmd>ToggleTerm direction=tab<CR>";
+      action = "<Cmd>exe v:count1 . \"ToggleTerm direction=tab\"<CR>";
       options = {
         desc = "Tab ToggleTerm";
         silent = true;
