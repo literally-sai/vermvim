@@ -39,7 +39,7 @@
           "xmllint"
         ];
         rust = [ "rustfmt" ];
-        nix = [ "nixfmt-rfc-style" ];
+        nix = [ "nixfmt" ];
         c = [ "clang_format" ];
         cpp = [ "clang_format" ];
         lua = [ "stylua" ];
@@ -56,6 +56,6 @@
 
   extraPackages = [
     pkgs.xmlformat
-    pkgs.nixfmt-rfc-style
+    pkgs.nixfmt
   ];
 }
