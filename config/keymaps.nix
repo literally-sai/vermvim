@@ -2,7 +2,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>f";
+      key = "<leader>fo";
       action.__raw = ''
         function()
           require("conform").format({ async = true, lsp_fallback = true })
