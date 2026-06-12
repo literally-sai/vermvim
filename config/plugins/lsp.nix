@@ -9,7 +9,13 @@
         installRustc = false;
       };
       ts_ls.enable = true;
-      clangd.enable = true;
+      clangd = {
+        enable = true;
+        cmd = [
+          "clangd"
+          "--fallback-style={SortIncludes: Never}"
+        ];
+      };
       nil_ls.enable = true;
       nil_ls.settings.nix.flake.autoArchive = true;
       cssls.enable = true;
@@ -25,7 +31,7 @@
   };
 
   plugins = {
-    lsp-format.enable = true;
+    lsp-format.enable = false;
     lspsaga = {
       enable = true;
       settings.lightbulb.enable = false;

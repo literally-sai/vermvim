@@ -4,10 +4,6 @@
   plugins.conform-nvim = {
     enable = true;
     settings = {
-      format_on_save = {
-        lsp_fallback = true;
-        timeout_ms = 500;
-      };
       formatters_by_ft = {
         javascript = [
           "prettierd"
@@ -43,16 +39,23 @@
           "xmllint"
         ];
         rust = [ "rustfmt" ];
-        nix = [ "alejandra" ];
+        nix = [ "nixfmt-rfc-style" ];
         c = [ "clang_format" ];
         cpp = [ "clang_format" ];
         lua = [ "stylua" ];
         dockerfile = [ "hadolint" ];
+      };
+
+      formatters = {
+        clang_format = {
+          prepend_args = [ "-style={SortIncludes: Never}" ];
+        };
       };
     };
   };
 
   extraPackages = [
     pkgs.xmlformat
+    pkgs.nixfmt-rfc-style
   ];
 }
