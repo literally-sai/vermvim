@@ -1,3 +1,4 @@
+{ pkgs, ...}:
 {
   plugins.lsp = {
     enable = true;
@@ -39,6 +40,7 @@
       html.enable = true;
       emmet_ls.enable = true;
       terraformls.enable = true;
+      texlab.enable = true;
       lua_ls.enable = true;
     };
   };
@@ -50,4 +52,9 @@
       settings.lightbulb.enable = false;
     };
   };
+
+  extraPackages = [
+    pkgs.texlab
+  ];
+
 }

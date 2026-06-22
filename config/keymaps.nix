@@ -1,3 +1,4 @@
+{ pkgs, ...}:
 {
   keymaps = [
     {
@@ -408,9 +409,27 @@
         silent = true;
       };
     }
+
+    {
+      mode = "n";
+      key = "<leader>mp";
+      action.__raw = ''
+        function()
+          require("nabla").popup()
+        end
+      '';
+      options = {
+        desc = "Preview LaTeX Math Block via Nabla";
+        silent = true;
+      };
+    }
   ];
   extraConfigLua = ''
     vim.cmd([[cabbrev W w !sudo tee % > /dev/null]])
     vim.cmd([[cabbrev Q q!]])
   '';
+
+  extraPlugins = [
+    pkgs.vimPlugins.nabla-nvim
+  ];
 }
