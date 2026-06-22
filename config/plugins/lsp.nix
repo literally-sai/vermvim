@@ -14,7 +14,20 @@
         cmd = [
           "clangd"
           "--fallback-style={SortIncludes: Never}"
+          "--background-index"
+          "--clang-tidy"
+          "--completion-style=detailed"
+          "--function-arg-placeholders"
+          "--fallback-style=llvm"
+          "--header-insertion=iwyu"
+          "--pch-storage=memory"
+          "--log=error"
         ];
+        extraOptions = {
+          init_options = {
+            fallbackFlags = ["--std=c++23"];
+          };
+        };
       };
       nil_ls.enable = true;
       nil_ls.settings.nix.flake.autoArchive = true;
