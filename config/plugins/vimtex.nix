@@ -4,8 +4,10 @@
     enable = true;
     texlivePackage = pkgs.texliveFull;
     settings = {
-      view_method = "zathura";
       compiler = "latexmk";
+      view_method = "general";
+      view_general_viewer = "zathura";
+      view_general_options = "--synctex-forward @line:@col:@tex @pdf";
     };
   };
 }
